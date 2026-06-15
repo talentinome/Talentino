@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0}
+  input::placeholder{color:#6E7588}
+  input:focus{outline:none}
+  @keyframes floatA{0%,100%{transform:translate(0,0)}50%{transform:translate(28px,-24px)}}
+  @keyframes floatB{0%,100%{transform:translate(0,0)}50%{transform:translate(-32px,22px)}}
+  @keyframes drift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(20px,16px) scale(1.1)}}
+  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#D9D8DD;padding:56px 40px 80px;font-family:'Hanken Grotesk',sans-serif;-webkit-font-smoothing:antialiased">
+<div style="max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:56px">
+
+  <!-- Page heading -->
+  <div>
+    <div style="font:600 13px/1 'Hanken Grotesk';letter-spacing:.2em;text-transform:uppercase;color:#86858E">Talentino · Archive</div>
+    <div style="font:800 32px/1.1 'Schibsted Grotesk';letter-spacing:-.02em;color:#1b1b21;margin-top:8px">Hero variations — not selected</div>
+    <div style="font:400 15px/1.55 'Hanken Grotesk';color:#6c6b73;margin-top:8px;max-width:640px">Earlier hero explorations kept for reference. The chosen direction (Split Editorial) lives in the main “Talentino Hero” file.</div>
+  </div>
+
+  <!-- ============ 01 — CENTERED SPOTLIGHT ============ -->
+  <div>
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:14px">
+      <span style="font:800 15px 'Schibsted Grotesk';color:#1b1b21">01</span>
+      <span style="font:600 15px 'Hanken Grotesk';color:#2c2c33">Centered Spotlight</span>
+      <span style="font:400 13px 'Hanken Grotesk';color:#8a8a92">— wall-of-faces, search-led</span>
+    </div>
+
+    <div style="position:relative;height:760px;border-radius:22px;overflow:hidden;background:#0A0D1A;box-shadow:0 34px 90px -34px rgba(0,0,0,.6);display:flex;flex-direction:column">
+      <!-- collage bg -->
+      <div style="position:absolute;inset:0;z-index:1;display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(3,1fr);gap:8px;padding:8px">
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(232,176,75,.14),transparent 56%),linear-gradient(180deg,#2b3042,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(96,132,210,.13),transparent 56%),linear-gradient(180deg,#262b3c,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(255,255,255,.08),transparent 56%),linear-gradient(180deg,#2a2f3e,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(232,176,75,.14),transparent 56%),linear-gradient(180deg,#2b3042,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(96,132,210,.13),transparent 56%),linear-gradient(180deg,#262b3c,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(255,255,255,.08),transparent 56%),linear-gradient(180deg,#2a2f3e,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(255,255,255,.08),transparent 56%),linear-gradient(180deg,#2a2f3e,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(232,176,75,.14),transparent 56%),linear-gradient(180deg,#2b3042,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(96,132,210,.13),transparent 56%),linear-gradient(180deg,#262b3c,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(255,255,255,.08),transparent 56%),linear-gradient(180deg,#2a2f3e,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(232,176,75,.14),transparent 56%),linear-gradient(180deg,#2b3042,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(96,132,210,.13),transparent 56%),linear-gradient(180deg,#262b3c,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(96,132,210,.13),transparent 56%),linear-gradient(180deg,#262b3c,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(255,255,255,.08),transparent 56%),linear-gradient(180deg,#2a2f3e,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(232,176,75,.14),transparent 56%),linear-gradient(180deg,#2b3042,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(96,132,210,.13),transparent 56%),linear-gradient(180deg,#262b3c,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(255,255,255,.08),transparent 56%),linear-gradient(180deg,#2a2f3e,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+        <div style="border-radius:10px;background:radial-gradient(100% 72% at 50% 26%,rgba(232,176,75,.14),transparent 56%),linear-gradient(180deg,#2b3042,#11141e);box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)"></div>
+      </div>
+      <!-- darkening overlay -->
+      <div style="position:absolute;inset:0;z-index:2;background:radial-gradient(125% 95% at 50% 42%,rgba(10,13,26,.97) 28%,rgba(10,13,26,.74) 62%,rgba(10,13,26,.5) 100%),linear-gradient(180deg,rgba(10,13,26,.55),rgba(10,13,26,.4) 40%,rgba(10,13,26,.9))"></div>
+      <!-- grain -->
+      <div style="position:absolute;inset:0;z-index:3;pointer-events:none;mix-blend-mode:overlay;opacity:.13;background-size:180px;background-image:url(data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter%20id=%27n%27%3E%3CfeTurbulence%20type=%27fractalNoise%27%20baseFrequency=%27.85%27%20numOctaves=%272%27%20stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect%20width=%27100%25%27%20height=%27100%25%27%20filter=%27url%28%23n%29%27/%3E%3C/svg%3E)"></div>
+      <!-- bokeh -->
+      <div style="position:absolute;inset:0;z-index:4;pointer-events:none;overflow:hidden">
+        <div style="position:absolute;width:360px;height:360px;left:6%;top:4%;border-radius:50%;background:radial-gradient(circle,rgba(232,176,75,.22),transparent 65%);filter:blur(40px);animation:floatA 15s ease-in-out infinite"></div>
+        <div style="position:absolute;width:300px;height:300px;right:5%;top:8%;border-radius:50%;background:radial-gradient(circle,rgba(96,132,210,.18),transparent 66%);filter:blur(46px);animation:floatB 19s ease-in-out infinite"></div>
+        <div style="position:absolute;width:120px;height:120px;right:22%;bottom:18%;border-radius:50%;background:radial-gradient(circle,rgba(232,176,75,.28),transparent 60%);filter:blur(18px);animation:drift 12s ease-in-out infinite"></div>
+      </div>
+
+      <!-- NAV -->
+      <nav style="position:relative;z-index:6;display:flex;align-items:center;justify-content:space-between;padding:26px 42px">
+        <div style="display:flex;align-items:center;gap:11px">
+          <div style="position:relative;width:18px;height:18px;border-radius:5px;background:#E8B04B;display:flex;align-items:center;justify-content:center"><div style="width:6px;height:6px;border-radius:50%;background:#0A0D1A"></div></div>
+          <div style="font:700 21px 'Schibsted Grotesk';letter-spacing:-.01em;color:#F4F5F8">Talentino</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:34px">
+          <a href="#" style="font:500 15px 'Hanken Grotesk';color:#C4C8D4;text-decoration:none" style-hover="color:#E8B04B">How It Works</a>
+          <a href="#" style="font:500 15px 'Hanken Grotesk';color:#C4C8D4;text-decoration:none" style-hover="color:#E8B04B">For Companies</a>
+          <a href="#" style="font:500 15px 'Hanken Grotesk';color:#C4C8D4;text-decoration:none" style-hover="color:#E8B04B">Early Access</a>
+          <div style="display:flex;align-items:center;gap:2px;border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:4px">
+            <span style="padding:4px 10px;border-radius:999px;background:#E8B04B;color:#0A0D1A;font:600 12px 'Hanken Grotesk'">EN</span>
+            <span style="padding:4px 10px;color:#AEB4C2;font:600 13px 'IBM Plex Sans Arabic'">ع</span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- CONTENT -->
+      <div style="position:relative;z-index:6;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 40px 96px">
+        <div style="display:inline-flex;align-items:center;gap:13px;padding:8px 16px;border:1px solid rgba(232,176,75,.34);border-radius:999px;background:rgba(232,176,75,.07);margin-bottom:28px">
+          <span dir="rtl" style="font:500 14px 'IBM Plex Sans Arabic';color:#E8B04B">الموهبة الإبداعية في الشرق الأوسط</span>
+          <span style="width:4px;height:4px;border-radius:50%;background:#E8B04B"></span>
+          <span style="font:600 12px 'Hanken Grotesk';letter-spacing:.16em;text-transform:uppercase;color:#E8B04B">MENA's Creative Network</span>
+        </div>
+        <h1 style="font:800 66px/1.04 'Schibsted Grotesk';letter-spacing:-.025em;color:#F4F5F8;margin:0;max-width:15ch;text-wrap:balance">MENA's Creative Talent, <span style="color:#E8B04B">All in One Place</span></h1>
+        <p style="font:400 19px/1.55 'Hanken Grotesk';color:#AEB4C2;margin:24px 0 0;max-width:56ch">Find the right talent for your next production — or get discovered by the region's top studios and agencies.</p>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:34px;width:min(640px,100%);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:8px 8px 8px 18px">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A90A0" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg>
+          <input placeholder="Search actors, directors, DOPs, locations…" style="flex:1;background:transparent;border:0;color:#F4F5F8;font:400 16px 'Hanken Grotesk'">
+          <button style="border:0;padding:12px 22px;border-radius:10px;background:#E8B04B;color:#0A0D1A;font:600 15px 'Hanken Grotesk';cursor:pointer" style-hover="background:#F0C065">Search</button>
+        </div>
+        <div style="display:flex;gap:14px;margin-top:22px">
+          <a href="#" style="display:inline-flex;align-items:center;gap:9px;padding:15px 26px;border-radius:11px;background:#E8B04B;color:#0A0D1A;font:600 16px 'Hanken Grotesk';text-decoration:none;box-shadow:0 12px 34px -12px rgba(232,176,75,.6)" style-hover="background:#F0C065;transform:translateY(-1px)">Join as Talent <span style="font-size:17px">→</span></a>
+          <a href="#" style="display:inline-flex;align-items:center;padding:15px 26px;border-radius:11px;background:transparent;border:1px solid rgba(255,255,255,.28);color:#F4F5F8;font:600 16px 'Hanken Grotesk';text-decoration:none" style-hover="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)">Find Talent</a>
+        </div>
+      </div>
+
+      <!-- STAT BAR -->
+      <div style="position:absolute;left:0;right:0;bottom:0;z-index:6;display:flex;align-items:center;justify-content:center;gap:50px;padding:22px 40px;border-top:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,transparent,rgba(10,13,26,.55))">
+        <div style="display:flex;align-items:baseline;gap:9px"><span style="font:800 22px 'Schibsted Grotesk';color:#F4F5F8">500+</span><span style="font:500 14px 'Hanken Grotesk';letter-spacing:.03em;color:#9AA0B0">Talents</span></div>
+        <span style="width:5px;height:5px;border-radius:50%;background:rgba(232,176,75,.7)"></span>
+        <div style="display:flex;align-items:baseline;gap:9px"><span style="font:800 22px 'Schibsted Grotesk';color:#F4F5F8">50+</span><span style="font:500 14px 'Hanken Grotesk';letter-spacing:.03em;color:#9AA0B0">Studios</span></div>
+        <span style="width:5px;height:5px;border-radius:50%;background:rgba(232,176,75,.7)"></span>
+        <div style="display:flex;align-items:baseline;gap:9px"><span style="font:800 22px 'Schibsted Grotesk';color:#F4F5F8">15+</span><span style="font:500 14px 'Hanken Grotesk';letter-spacing:.03em;color:#9AA0B0">MENA Countries</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ 03 — CINEMATIC MARQUEE ============ -->
+  <div>
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:14px">
+      <span style="font:800 15px 'Schibsted Grotesk';color:#1b1b21">03</span>
+      <span style="font:600 15px 'Hanken Grotesk';color:#2c2c33">Cinematic Marquee</span>
+      <span style="font:400 13px 'Hanken Grotesk';color:#8a8a92">— animated talent reel, poster-scale type</span>
+    </div>
+
+    <div style="position:relative;height:780px;border-radius:22px;overflow:hidden;background:#0A0D1A;box-shadow:0 34px 90px -34px rgba(0,0,0,.6);display:flex;flex-direction:column">
+      <!-- marquee band -->
+      <div style="position:absolute;inset:0;z-index:1;overflow:hidden">
+        <div style="position:absolute;top:50%;left:-4%;width:108%;transform:translateY(-50%) rotate(-5deg);-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)">
+          <div style="display:flex;gap:18px;width:max-content;animation:marquee 44s linear infinite">
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(232,176,75,.18),transparent 58%),linear-gradient(180deg,#2c3144,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(96,132,210,.16),transparent 58%),linear-gradient(180deg,#262b3c,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(255,255,255,.1),transparent 58%),linear-gradient(180deg,#2a2f3e,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(232,176,75,.18),transparent 58%),linear-gradient(180deg,#2c3144,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(96,132,210,.16),transparent 58%),linear-gradient(180deg,#262b3c,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(255,255,255,.1),transparent 58%),linear-gradient(180deg,#2a2f3e,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(232,176,75,.14),transparent 58%),linear-gradient(180deg,#2b3042,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(96,132,210,.13),transparent 58%),linear-gradient(180deg,#262b3c,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(232,176,75,.18),transparent 58%),linear-gradient(180deg,#2c3144,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(96,132,210,.16),transparent 58%),linear-gradient(180deg,#262b3c,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(255,255,255,.1),transparent 58%),linear-gradient(180deg,#2a2f3e,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(232,176,75,.18),transparent 58%),linear-gradient(180deg,#2c3144,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(96,132,210,.16),transparent 58%),linear-gradient(180deg,#262b3c,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(255,255,255,.1),transparent 58%),linear-gradient(180deg,#2a2f3e,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(232,176,75,.14),transparent 58%),linear-gradient(180deg,#2b3042,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+            <div style="flex:0 0 184px;height:248px;border-radius:14px;overflow:hidden;background:radial-gradient(95% 58% at 50% 22%,rgba(96,132,210,.13),transparent 58%),linear-gradient(180deg,#262b3c,#10131d);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)"></div>
+          </div>
+        </div>
+      </div>
+      <!-- darkening + gold streak -->
+      <div style="position:absolute;inset:0;z-index:2;background:radial-gradient(80% 90% at 28% 52%,rgba(10,13,26,.96) 30%,rgba(10,13,26,.7) 60%,rgba(10,13,26,.45) 100%),linear-gradient(180deg,rgba(10,13,26,.82),rgba(10,13,26,.4) 45%,rgba(10,13,26,.88))"></div>
+      <div style="position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(115deg,transparent 40%,rgba(232,176,75,.1) 52%,transparent 60%)"></div>
+      <!-- grain -->
+      <div style="position:absolute;inset:0;z-index:3;pointer-events:none;mix-blend-mode:overlay;opacity:.14;background-size:180px;background-image:url(data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter%20id=%27n%27%3E%3CfeTurbulence%20type=%27fractalNoise%27%20baseFrequency=%27.85%27%20numOctaves=%272%27%20stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect%20width=%27100%25%27%20height=%27100%25%27%20filter=%27url%28%23n%29%27/%3E%3C/svg%3E)"></div>
+      <!-- bokeh -->
+      <div style="position:absolute;inset:0;z-index:4;pointer-events:none;overflow:hidden">
+        <div style="position:absolute;width:340px;height:340px;left:14%;top:10%;border-radius:50%;background:radial-gradient(circle,rgba(232,176,75,.24),transparent 64%);filter:blur(42px);animation:floatA 16s ease-in-out infinite"></div>
+        <div style="position:absolute;width:150px;height:150px;left:32%;bottom:16%;border-radius:50%;background:radial-gradient(circle,rgba(232,176,75,.3),transparent 60%);filter:blur(20px);animation:drift 13s ease-in-out infinite"></div>
+      </div>
+
+      <!-- NAV -->
+      <nav style="position:relative;z-index:6;display:flex;align-items:center;justify-content:space-between;padding:26px 42px">
+        <div style="display:flex;align-items:center;gap:11px">
+          <div style="width:18px;height:18px;border-radius:5px;background:#E8B04B;display:flex;align-items:center;justify-content:center"><div style="width:6px;height:6px;border-radius:50%;background:#0A0D1A"></div></div>
+          <div style="font:700 21px 'Schibsted Grotesk';letter-spacing:-.01em;color:#F4F5F8">Talentino</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:34px">
+          <a href="#" style="font:500 15px 'Hanken Grotesk';color:#C4C8D4;text-decoration:none" style-hover="color:#E8B04B">How It Works</a>
+          <a href="#" style="font:500 15px 'Hanken Grotesk';color:#C4C8D4;text-decoration:none" style-hover="color:#E8B04B">For Companies</a>
+          <a href="#" style="font:500 15px 'Hanken Grotesk';color:#C4C8D4;text-decoration:none" style-hover="color:#E8B04B">Early Access</a>
+          <div style="display:flex;align-items:center;gap:2px;border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:4px">
+            <span style="padding:4px 10px;border-radius:999px;background:#E8B04B;color:#0A0D1A;font:600 12px 'Hanken Grotesk'">EN</span>
+            <span style="padding:4px 10px;color:#AEB4C2;font:600 13px 'IBM Plex Sans Arabic'">ع</span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- CONTENT -->
+      <div style="position:relative;z-index:6;flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 52px 40px;max-width:900px">
+        <div style="display:inline-flex;align-self:flex-start;align-items:center;gap:13px;padding:8px 16px;border:1px solid rgba(232,176,75,.34);border-radius:999px;background:rgba(232,176,75,.07);margin-bottom:26px">
+          <span dir="rtl" style="font:500 14px 'IBM Plex Sans Arabic';color:#E8B04B">الموهبة الإبداعية في الشرق الأوسط</span>
+          <span style="width:4px;height:4px;border-radius:50%;background:#E8B04B"></span>
+          <span style="font:600 12px 'Hanken Grotesk';letter-spacing:.16em;text-transform:uppercase;color:#E8B04B">MENA's Creative Network</span>
+        </div>
+        <h1 style="font:800 78px/1 'Schibsted Grotesk';letter-spacing:-.03em;color:#F4F5F8;margin:0;text-wrap:balance">MENA's Creative Talent,<br><span style="color:#E8B04B">All in One Place</span></h1>
+        <p style="font:400 20px/1.5 'Hanken Grotesk';color:#B6BBC8;margin:26px 0 0;max-width:50ch">Find the right talent for your next production — or get discovered by the region's top studios and agencies.</p>
+        <div style="display:flex;align-items:center;gap:16px;margin-top:34px;flex-wrap:wrap">
+          <div style="display:flex;align-items:center;gap:8px;width:min(460px,100%);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:7px 7px 7px 18px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A90A0" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="16.5" y1="16.5" x2="21" y2="21"></line></svg>
+            <input placeholder="Search talent or roles…" style="flex:1;background:transparent;border:0;color:#F4F5F8;font:400 15px 'Hanken Grotesk'">
+            <button style="border:0;padding:11px 22px;border-radius:999px;background:#E8B04B;color:#0A0D1A;font:600 14px 'Hanken Grotesk';cursor:pointer" style-hover="background:#F0C065">Search</button>
+          </div>
+          <a href="#" style="display:inline-flex;align-items:center;gap:9px;padding:15px 26px;border-radius:999px;background:#E8B04B;color:#0A0D1A;font:600 15px 'Hanken Grotesk';text-decoration:none;box-shadow:0 12px 34px -12px rgba(232,176,75,.6)" style-hover="background:#F0C065;transform:translateY(-1px)">Join as Talent <span style="font-size:16px">→</span></a>
+          <a href="#" style="display:inline-flex;align-items:center;padding:15px 26px;border-radius:999px;background:transparent;border:1px solid rgba(255,255,255,.28);color:#F4F5F8;font:600 15px 'Hanken Grotesk';text-decoration:none" style-hover="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)">Find Talent</a>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:34px;flex-wrap:wrap">
+          <div style="display:flex;align-items:baseline;gap:8px;padding:12px 18px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)"><span style="font:800 21px 'Schibsted Grotesk';color:#F4F5F8">500+</span><span style="font:500 13px 'Hanken Grotesk';color:#9AA0B0">Talents</span></div>
+          <div style="display:flex;align-items:baseline;gap:8px;padding:12px 18px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)"><span style="font:800 21px 'Schibsted Grotesk';color:#F4F5F8">50+</span><span style="font:500 13px 'Hanken Grotesk';color:#9AA0B0">Studios</span></div>
+          <div style="display:flex;align-items:baseline;gap:8px;padding:12px 18px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)"><span style="font:800 21px 'Schibsted Grotesk';color:#F4F5F8">15+</span><span style="font:500 13px 'Hanken Grotesk';color:#9AA0B0">MENA Countries</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</x-dc>
+</body>
+</html>
